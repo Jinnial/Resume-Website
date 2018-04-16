@@ -1,10 +1,10 @@
 <template>
     <div>
-        <todo v-for="item in todos" :key="item"></todo>
+        <todo v-for="item in todos" :todo.sync="todo"></todo>
     </div>
 </template>
 <script>
-import Todo from "./components/Todo"
+import Todo from './Todo'
 
 export default {
   name: 'TodoList',
